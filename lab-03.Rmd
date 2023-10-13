@@ -44,9 +44,7 @@ The graph is difficult to understand, where is the comparison using both variabl
 knitr::include_graphics("img/life-expectancy-rule-of-law.png")
 ```
 
-_Write your comments about image 3 below_
-
-
+There are no numbers on the axes, and it is difficult to make out the individual countries especially when there are a lot on top of each other, it is hard to read. 
 
 
 ## Image 4
