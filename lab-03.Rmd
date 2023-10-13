@@ -53,8 +53,7 @@ There are no numbers on the axes, and it is difficult to make out the individual
 knitr::include_graphics("img/global-income-dist.PNG")
 ```
 
-_Write your comments about image 4 below_
-
+It is a somewhat complex graph, but readble once understood. However, trying to use this graph for further analysis proves virtually iumpossible, as no reliable observations can be obtained from this graph. 
 
 
 
