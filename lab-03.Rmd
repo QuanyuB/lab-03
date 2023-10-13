@@ -81,17 +81,6 @@ How many observations are there in the data set?
 ## Exercise 2
 
 ```{r pivoting}
-<<<<<<< HEAD
-=======
-## Uncomment and complete the following code
-
-staff_long <- staff %>%
-  pivot_longer(
-    cols = faculty_type, 
-    names_to = "years",
-    values_to = "percent"
-    )
->>>>>>> 4b3f277c56914386b31fa229e4f9ac5040eb8fe6
 
 (
 staff_long <- staff %>%
@@ -125,32 +114,41 @@ ggplot(data = staff_long,
                      colour = faculty_type)) +
   geom_line()
 
-
 ```
 
 ## Exercise 5
 
 ```{r mutate-year}
-## Uncomment and complete the following code
 
-#staff_long <- staff_long %>%
-#  mutate(year = ______(year))
+staff_long <- staff_long %>%
+  mutate(year = as.numeric(year))
 ```
 
 
 ```{r working-line-plot}
-# Write your code for Exercise 5 here
-
-
+ggplot(data = staff_long,
+       mapping = aes(x = year, 
+                     y = percent, 
+                     colour = faculty_type)) +
+  geom_line()
 
 ```
 
 ## Exercise 6
 
 ```{r better-line-plot}
-# Write your code for Exercise 6 here
-
-
+ggplot(data = staff_long,
+       mapping = aes(x = year, 
+                     y = percent, 
+                     colour = faculty_type)) +
+  geom_line() +
+  labs(title = "Trends in instructional staff employees",
+       x = "Year",
+       y= "Percentage of staff",
+       color= "Faculty type",
+       shape= "Faculty type"
+         ) +
+  theme_bw() 
 
 
 ```
